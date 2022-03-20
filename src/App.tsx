@@ -7,10 +7,12 @@ import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import HowItWorks from "./sections/HowItWorks";
 import Statistics from "./sections/Statistics";
+import Global from "./styles/global";
 
 function App() {
   return (
     <div className="App">
+      <Global />
       <Header />
       <Hero />
       <HowItWorks />
