@@ -31,6 +31,7 @@ export default createGlobalStyle<GlobalProps>`
         font-family: "Lato", sans-serif;
         color: ${({ theme }) => `hsl(${theme.fg})`};
         background-color: ${({ theme }) => `hsl(${theme.bg})`};
+        transition: 200ms ease-out;
     }
 
     /* color utility classes */
