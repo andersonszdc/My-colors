@@ -24,7 +24,7 @@ function App() {
         <Hero />
         <HowItWorks SetTheme={setColors} />
         <Statistics />
-        <Cases />
+        <Cases SetTheme={setColors} />
         <FAQ />
         <CTA />
         <Footer />
