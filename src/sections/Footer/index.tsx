@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Container } from "./styles";
 
 const Footer = () => {
   return (
-    <div>
+    <Container>
       <div>
-        <h1>My-colors</h1>
+        <h1 className="logo">My-colors</h1>
       </div>
-      <div>
+      <nav className="navbar">
         <a href="#">Sobre</a>
         <a href="#">Nosso perfil do My-colors</a>
         <a href="#">Newsroom</a>
@@ -23,8 +24,8 @@ const Footer = () => {
         <a href="#">Termos de Serviço</a>
         <a href="#">Privacidade & Cookies</a>
         <a href="#">Anúncios personalizados</a>
-      </div>
-    </div>
+      </nav>
+    </Container>
   );
 };
 

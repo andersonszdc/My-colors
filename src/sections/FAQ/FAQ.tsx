@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Container } from "./styles";
 
 const FAQ = () => {
   const [data, setData] = useState([]);
@@ -10,17 +11,17 @@ const FAQ = () => {
       .then((res) => setData(res.FAQ));
   });
   return (
-    <div>
-      <h1>Algumas dúvidas comuns</h1>
-      <div>
+    <Container>
+      <h1 className="title">Algumas dúvidas comuns</h1>
+      <div className="questions">
         {data.map((data: any, index) => (
           <div key={index}>
-            <h2>{data.question}</h2>
-            <h3>{data.answer}</h3>
+            <h2 className="question">{data.question}</h2>
+            <h3 className="answer">{data.answer}</h3>
           </div>
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 

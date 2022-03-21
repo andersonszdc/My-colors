@@ -48,4 +48,5 @@ export const BtnAction = styled.button`
     border: 2px solid hsl(var(--clr-yellow));
     border-radius: 48px;
     padding: 16px 24px;
+    cursor: pointer;
 `
