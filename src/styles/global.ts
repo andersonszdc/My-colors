@@ -1,6 +1,11 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { Itheme } from "./theme";
 
-export default createGlobalStyle`
+interface GlobalProps {
+  theme: Itheme;
+}
+
+export default createGlobalStyle<GlobalProps>`
     /* general reset */
     * {
         margin: 0;
@@ -10,6 +15,12 @@ export default createGlobalStyle`
     
     a {
         text-decoration: none;
+        color: inherit;
+    }
+
+    button {
+        color: inherit;
+        background-color: transparent;
     }
 
     html {
@@ -18,6 +29,8 @@ export default createGlobalStyle`
 
     body {
         font-family: "Lato", sans-serif;
+        color: ${({ theme }) => `hsl(${theme.fg})`};
+        background-color: ${({ theme }) => `hsl(${theme.bg})`};
     }
 
     /* color utility classes */
@@ -43,10 +56,10 @@ export default createGlobalStyle`
 `;
 
 export const BtnAction = styled.button`
-    font-size: var(--fs-300);
-    font-weight: 700;
-    border: 2px solid hsl(var(--clr-yellow));
-    border-radius: 48px;
-    padding: 16px 24px;
-    cursor: pointer;
-`
+  font-size: var(--fs-300);
+  font-weight: 700;
+  border: 2px solid hsl(var(--clr-yellow));
+  border-radius: 48px;
+  padding: 16px 24px;
+  cursor: pointer;
+`;

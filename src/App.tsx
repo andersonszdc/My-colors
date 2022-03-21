@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
 import Cases from "./sections/Cases";
 import CTA from "./sections/CTA";
 import FAQ from "./sections/FAQ/FAQ";
@@ -6,21 +7,28 @@ import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import HowItWorks from "./sections/HowItWorks";
-import Statistics from "./Statistics";
+import Statistics from "./sections/Statistics";
 import Global from "./styles/global";
+import theme from "./styles/theme";
 
 function App() {
+  const [colors, setColors] = useState<any>({
+    bg: theme.dark,
+    fg: theme.yellow,
+  });
   return (
     <div className="App">
-      <Global />
-      <Header />
-      <Hero />
-      <HowItWorks />
-      <Statistics />
-      <Cases />
-      <FAQ />
-      <CTA />
-      <Footer />
+      <ThemeProvider theme={{ theme, ...colors }}>
+        <Global />
+        <Header />
+        <Hero />
+        <HowItWorks SetTheme={setColors} />
+        <Statistics />
+        <Cases />
+        <FAQ />
+        <CTA />
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 }

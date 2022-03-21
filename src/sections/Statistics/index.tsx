@@ -1,5 +1,5 @@
 import React from "react";
-import { BtnAction } from "../styles/global";
+import { BtnAction } from "../../styles/global";
 import { Container } from "./styles";
 
 const Statistics = () => {
