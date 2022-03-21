@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { BtnAction } from "../../styles/global";
 import { Container } from "./styles";
 
 const Header = () => {
@@ -14,8 +15,8 @@ const Header = () => {
         <a href="">Recursos</a>
       </nav>
       <div className="action">
-        <button>Entrar</button>
-        <button>Faça seu cadastro</button>
+        <BtnAction>Entrar</BtnAction>
+        <BtnAction>Faça seu cadastro</BtnAction>
       </div>
     </Container>
   );

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     /* general reset */
@@ -23,11 +23,11 @@ export default createGlobalStyle`
     /* color utility classes */
     :root {
         /* colors */
-        --clr-dark: 199, 55, 15;
-        --clr-yellow: 51, 90, 81;
-        --clr-light-blue: 201, 93, 89;
-        --clr-dark-blue: 189, 100, 16;
-        --clr-orange: 21, 100, 72;
+        --clr-dark: 199, 55%, 15%;
+        --clr-yellow: 51, 90%, 81%;
+        --clr-light-blue: 201%, 93%, 89%;
+        --clr-dark-blue: 189, 100%, 16%;
+        --clr-orange: 21, 100%, 72%;
 
         /* font-sizes */
         --fs-800: 6.4rem;
@@ -41,3 +41,11 @@ export default createGlobalStyle`
     /* font utility classes */
 
 `;
+
+export const BtnAction = styled.button`
+    font-size: var(--fs-300);
+    font-weight: 700;
+    border: 2px solid hsl(var(--clr-yellow));
+    border-radius: 48px;
+    padding: 16px 24px;
+`
