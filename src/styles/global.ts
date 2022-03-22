@@ -56,11 +56,16 @@ export default createGlobalStyle<GlobalProps>`
 
 `;
 
-export const BtnAction = styled.button<GlobalProps>`
+export const DefaultBtn = styled.button<GlobalProps>`
   font-size: var(--fs-300);
   font-weight: 700;
-  border: 2px solid ${({theme}) => `hsl(${theme.fg})`};
+  border: 2px solid ${({ theme }) => `hsl(${theme.fg})`};
   border-radius: 48px;
   padding: 16px 24px;
   cursor: pointer;
+`;
+
+export const AlternateBtn = styled(DefaultBtn)`
+  color: ${({ theme }) => `hsl(${theme.bg})`};
+  background-color: ${({theme}) => `hsl(${theme.fg})`};
 `;

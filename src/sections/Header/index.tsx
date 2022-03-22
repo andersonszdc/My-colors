@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback } from "react";
 import WithIntersectionObserver from "../../observer/withIntersectionObserver";
-import { BtnAction } from "../../styles/global";
+import { AlternateBtn, DefaultBtn } from "../../styles/global";
 import theme from "../../styles/theme";
 import { Container } from "./styles";
 
@@ -25,8 +25,8 @@ const Header = ({ SetTheme }: IProps) => {
           <a href="">Recursos</a>
         </nav>
         <div className="action">
-          <BtnAction>Entrar</BtnAction>
-          <BtnAction>Faça seu cadastro</BtnAction>
+          <DefaultBtn>Entrar</DefaultBtn>
+          <AlternateBtn>Faça seu cadastro</AlternateBtn>
         </div>
       </Container>
     </WithIntersectionObserver>

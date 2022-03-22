@@ -1,5 +1,5 @@
 import React from "react";
-import { BtnAction } from "../../styles/global";
+import { DefaultBtn } from "../../styles/global";
 import { Container } from "./styles";
 
 const Statistics = () => {
@@ -21,7 +21,7 @@ const Statistics = () => {
           aposentados que adoram viajar, todo mundo entra no My-colors pra se
           inspirar e colocar seus planos em prática.
         </p>
-        <BtnAction>Veja estatísticas de audiência</BtnAction>
+        <DefaultBtn>Veja estatísticas de audiência</DefaultBtn>
       </div>
     </Container>
   );

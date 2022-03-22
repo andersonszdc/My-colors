@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import WithIntersectionObserver from "../../observer/withIntersectionObserver";
-import { BtnAction } from "../../styles/global";
+import { DefaultBtn } from "../../styles/global";
 import theme from "../../styles/theme";
 import { Container } from "./styles";
 
@@ -27,7 +27,7 @@ const Cases = ({ SetTheme }: IProps) => {
               impactantes, com um custo por aquisição 4 vezes mais baixo do que
               seus indicadores internos mostravam.<sup>1</sup>
             </p>
-            <BtnAction>Ler história</BtnAction>
+            <DefaultBtn>Ler história</DefaultBtn>
           </div>
           <div className="cases__item">
             <img className="card__banner" src="Jomely-Breton.png" alt="" />
@@ -39,7 +39,7 @@ const Cases = ({ SetTheme }: IProps) => {
               148% mais seguidores em um mês e se conectou com um público muito
               engajado.<sup>2</sup>
             </p>
-            <BtnAction>Veja o perfil dela</BtnAction>
+            <DefaultBtn>Veja o perfil dela</DefaultBtn>
           </div>
         </div>
       </Container>

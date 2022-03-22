@@ -1,5 +1,5 @@
 import React from "react";
-import { BtnAction } from "../../styles/global";
+import { DefaultBtn } from "../../styles/global";
 import { Container } from "./styles";
 
 const Hero = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
           No My-colors, as pessoas encontram inspiração, novos produtos e
           possibilidades num só lugar.
         </h2>
-        <BtnAction>Crie sua conta</BtnAction>
+        <DefaultBtn>Crie sua conta</DefaultBtn>
       </div>
     </Container>
   );
