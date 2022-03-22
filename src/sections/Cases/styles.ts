@@ -20,12 +20,12 @@ export const Container = styled.div`
 
   .cases__item {
     display: grid;
-    flex-direction: column;
     gap: 32px;
+    justify-items: center;
   }
 
   .card__banner {
-      width: 100%;
+    width: 100%;
   }
 
   .card__title {

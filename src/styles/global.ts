@@ -64,6 +64,7 @@ export default createGlobalStyle<GlobalProps>`
 `;
 
 export const DefaultBtn = styled.button<GlobalProps>`
+  width: fit-content;
   font-size: var(--fs-300);
   font-weight: 700;
   border: 2px solid ${({ theme }) => `hsl(${theme.fg})`};
