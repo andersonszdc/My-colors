@@ -20,12 +20,12 @@ function App() {
     <div className="App">
       <ThemeProvider theme={{ theme, ...colors }}>
         <Global />
-        <Header />
+        <Header SetTheme={setColors} />
         <Hero />
         <HowItWorks SetTheme={setColors} />
         <Statistics />
         <Cases SetTheme={setColors} />
-        <FAQ />
+        <FAQ SetTheme={setColors} />
         <CTA />
         <Footer />
       </ThemeProvider>

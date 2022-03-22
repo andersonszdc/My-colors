@@ -31,7 +31,7 @@ export default createGlobalStyle<GlobalProps>`
         font-family: "Lato", sans-serif;
         color: ${({ theme }) => `hsl(${theme.fg})`};
         background-color: ${({ theme }) => `hsl(${theme.bg})`};
-        transition: 200ms ease-out;
+        transition: 500ms ease-out;
     }
 
     /* color utility classes */
@@ -56,10 +56,10 @@ export default createGlobalStyle<GlobalProps>`
 
 `;
 
-export const BtnAction = styled.button`
+export const BtnAction = styled.button<GlobalProps>`
   font-size: var(--fs-300);
   font-weight: 700;
-  border: 2px solid hsl(var(--clr-yellow));
+  border: 2px solid ${({theme}) => `hsl(${theme.fg})`};
   border-radius: 48px;
   padding: 16px 24px;
   cursor: pointer;
