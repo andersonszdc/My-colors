@@ -1,4 +1,4 @@
-import { ReactElement, useEffect } from "react";
+import { ReactElement, useEffect, useMemo } from "react";
 
 type InViewProps = {
   children: JSX.Element;
@@ -6,22 +6,25 @@ type InViewProps = {
 };
 
 function WithIntersectionObserver({ children, callback }: InViewProps) {
-  let options = {
-    threshold: 0.8,
-  };
+  const ElementId = useMemo(
+    () => (children as ReactElement).props.id,
+    [children]
+  );
   useEffect(() => {
+    const options = {
+      threshold: 0.5,
+    };
     const intersectionObserver = new IntersectionObserver((entries) => {
+      console.log(entries[0]);
       if (entries[0].isIntersecting) {
         callback();
       }
     }, options);
     intersectionObserver.observe(
-      document.querySelector(
-        `#${(children! as ReactElement).props.id}`
-      ) as HTMLDivElement
+      document.querySelector(`#${ElementId}`) as HTMLDivElement
     );
     return () => intersectionObserver.disconnect();
-  });
+  }, [callback, ElementId]);
 
   return children;
 }

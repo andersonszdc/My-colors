@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import WithIntersectionObserver from "../../observer/withIntersectionObserver";
 import { BtnAction } from "../../styles/global";
 import theme from "../../styles/theme";
@@ -9,11 +9,11 @@ interface IProps {
 }
 
 const Cases = ({ SetTheme }: IProps) => {
-  const callback = () => {
+  const memoizedCallback = useCallback(() => {
     SetTheme({ bg: theme.yellow, fg: theme.dark });
-  };
+  }, [SetTheme]);
   return (
-    <WithIntersectionObserver callback={callback}>
+    <WithIntersectionObserver callback={memoizedCallback}>
       <Container id="cases">
         <h1 className="title">
           As marcas e os criadores de conteúdo têm motivos pra comemorar

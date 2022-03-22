@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import WithIntersectionObserver from "../../observer/withIntersectionObserver";
 import theme from "../../styles/theme";
 import { Container } from "./styles";
@@ -8,11 +8,11 @@ interface IProps {
 }
 
 const HowItWorks = ({ SetTheme }: IProps) => {
-  const callback = () => {
+  const memoizedCallback = useCallback(() => {
     SetTheme({ bg: theme.light_blue, fg: theme.dark_blue });
-  };
+  }, [SetTheme]);
   return (
-    <WithIntersectionObserver callback={callback}>
+    <WithIntersectionObserver callback={memoizedCallback}>
       <Container id="howitowork">
         <h1 className="title">Como funciona</h1>
         <h2 className="subtitle">
