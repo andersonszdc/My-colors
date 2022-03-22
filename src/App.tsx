@@ -27,7 +27,7 @@ function App() {
         <Cases SetTheme={setColors} />
         <FAQ SetTheme={setColors} />
         <CTA />
-        <Footer />
+        <Footer SetTheme={setColors} />
       </ThemeProvider>
     </div>
   );
