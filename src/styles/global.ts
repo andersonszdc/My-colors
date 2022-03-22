@@ -70,9 +70,18 @@ export const DefaultBtn = styled.button<GlobalProps>`
   border-radius: 48px;
   padding: 12px 24px;
   cursor: pointer;
+  transition: 500ms ease-out;
+  :hover {
+    color: ${({ theme }) => `hsl(${theme.bg})`};
+    background-color: ${({ theme }) => `hsl(${theme.fg})`};
+  }
 `;
 
 export const AlternateBtn = styled(DefaultBtn)`
   color: ${({ theme }) => `hsl(${theme.bg})`};
   background-color: ${({ theme }) => `hsl(${theme.fg})`};
+  :hover {
+    color: ${({ theme }) => `hsl(${theme.fg})`};
+    background-color: ${({ theme }) => `hsl(${theme.bg})`};
+  }
 `;
