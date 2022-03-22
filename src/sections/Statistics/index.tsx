@@ -15,10 +15,10 @@ const Statistics = () => {
       <div className="copy">
         <h1 className="title">Público certo. Lugar certo. Hora certa.</h1>
         <p className="paragraph">
-          Você vai encontrar seu público mais engajado e fiel aqui no Pinterest.
-          Todo mundo quer descobrir coisas novas — por isso o Pinterest atrai
+          Você vai encontrar seu público mais engajado e fiel aqui no My-colors.
+          Todo mundo quer descobrir coisas novas — por isso o My-colors atrai
           todos os públicos. De estudantes da geração Z e homens da geração Y a
-          aposentados que adoram viajar, todo mundo entra no Pinterest pra se
+          aposentados que adoram viajar, todo mundo entra no My-colors pra se
           inspirar e colocar seus planos em prática.
         </p>
         <BtnAction>Veja estatísticas de audiência</BtnAction>

@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  margin: 0 8%;
+  margin: 0 8% 15rem 8%;
   display: flex;
   gap: 12rem;
   justify-content: center;
+  min-height: calc(100vh - 118px);
+  align-items: center;
 
   .copy {
     display: flex;
@@ -14,9 +16,11 @@ export const Container = styled.main`
 
   .copy h1 {
     font-size: var(--fs-800);
+    font-weight: 700;
   }
 
   .copy h2 {
     font-size: var(--fs-500);
+    font-weight: 400;
   }
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  margin: 6.4rem 8%;
+  margin: 18rem 8% 4rem 8%;
   display: flex;
   justify-content: space-between;
 
