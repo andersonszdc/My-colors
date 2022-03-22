@@ -6,10 +6,14 @@ const Statistics = () => {
   return (
     <Container>
       <div className="visual">
-        <img src="/girl.png" alt="mulher branca com cabelo azul" />
-        <div>
-          <p>400 mi</p>
-          <p>Mais de 400 milhões de pessoas usam o My-colors todos os meses.</p>
+        <div className="visual__img">
+          <img src="/girl.png" alt="mulher branca com cabelo azul" />
+        </div>
+        <div className="card">
+          <p className="card__title">400 mi</p>
+          <p className="card__paragraph">
+            Mais de 400 milhões de pessoas usam o My-colors todos os meses.
+          </p>
         </div>
       </div>
       <div className="copy">
