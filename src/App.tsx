@@ -20,8 +20,8 @@ function App() {
     <div className="App">
       <ThemeProvider theme={{ theme, ...colors }}>
         <Global />
-        <Header SetTheme={setColors} />
-        <Hero />
+        <Header />
+        <Hero SetTheme={setColors} />
         <HowItWorks SetTheme={setColors} />
         <Statistics />
         <Cases SetTheme={setColors} />

@@ -5,7 +5,12 @@ export const Container = styled.main`
   justify-content: center;
   border-bottom: 1px solid ${({ theme }) => `hsl(${theme.fg}, 0.2)`};
   width: 100%;
-  padding: 3.2rem 0;
+  padding: 1.6rem 0;
+  position: sticky;
+  top: 0;
+  background-color: ${({ theme }) => `hsl(${theme.bg})`};
+  transition: 500ms ease-out;
+  z-index: 1;
 
   .wrapper {
     display: flex;
@@ -22,11 +27,11 @@ export const Container = styled.main`
 
   .navbar {
     display: flex;
-    gap: 1.6rem;
+    gap: 2.4rem;
   }
 
   .navbar a {
-    font-size: var(--fs-300);
+    font-size: var(--fs-400);
     font-weight: 400;
   }
 

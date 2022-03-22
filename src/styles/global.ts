@@ -68,7 +68,7 @@ export const DefaultBtn = styled.button<GlobalProps>`
   font-weight: 700;
   border: 2px solid ${({ theme }) => `hsl(${theme.fg})`};
   border-radius: 48px;
-  padding: 16px 24px;
+  padding: 12px 24px;
   cursor: pointer;
 `;
 
