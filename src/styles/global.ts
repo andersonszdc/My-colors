@@ -32,6 +32,8 @@ export default createGlobalStyle<GlobalProps>`
         color: ${({ theme }) => `hsl(${theme.fg})`};
         background-color: ${({ theme }) => `hsl(${theme.bg})`};
         transition: 500ms ease-out;
+        max-width: 1600px;
+        margin: 0 auto;
     }
 
     /* color utility classes */
@@ -45,6 +47,7 @@ export default createGlobalStyle<GlobalProps>`
 
         /* font-sizes */
         --fs-800: 6.4rem;
+        --fs-700: 5.0rem;
         --fs-600: 2.6rem;
         --fs-500: 2.4rem;
         --fs-400: 1.8rem;
@@ -67,5 +70,5 @@ export const DefaultBtn = styled.button<GlobalProps>`
 
 export const AlternateBtn = styled(DefaultBtn)`
   color: ${({ theme }) => `hsl(${theme.bg})`};
-  background-color: ${({theme}) => `hsl(${theme.fg})`};
+  background-color: ${({ theme }) => `hsl(${theme.fg})`};
 `;
