@@ -4,7 +4,7 @@ import { Container } from "./styles";
 
 const CTA = () => {
   return (
-    <Container>
+    <Container className="limit">
       <h1 className="title">Primeiros passos</h1>
       <div className="action">
         <DefaultBtn>Saiba mais sobre anúncios</DefaultBtn>

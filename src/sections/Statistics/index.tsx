@@ -4,7 +4,7 @@ import { Container } from "./styles";
 
 const Statistics = () => {
   return (
-    <Container>
+    <Container className="limit">
       <div className="visual">
         <div className="visual__img">
           <img src="/girl.png" alt="mulher branca com cabelo azul" />

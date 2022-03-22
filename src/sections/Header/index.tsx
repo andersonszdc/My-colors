@@ -16,17 +16,19 @@ const Header = ({ SetTheme }: IProps) => {
   return (
     <WithIntersectionObserver callback={memoizedCallback}>
       <Container id="header">
-        <div className="logo">My-colors</div>
-        <nav className="navbar">
-          <a href="">Por que o My-colors</a>
-          <a href="">Criar conteúdo</a>
-          <a href="">Publicidade</a>
-          <a href="">Ideias</a>
-          <a href="">Recursos</a>
-        </nav>
-        <div className="action">
-          <DefaultBtn>Entrar</DefaultBtn>
-          <AlternateBtn>Faça seu cadastro</AlternateBtn>
+        <div className="wrapper">
+          <div className="logo">My-colors</div>
+          <nav className="navbar">
+            <a href="">Por que o My-colors</a>
+            <a href="">Criar conteúdo</a>
+            <a href="">Publicidade</a>
+            <a href="">Ideias</a>
+            <a href="">Recursos</a>
+          </nav>
+          <div className="action">
+            <DefaultBtn>Entrar</DefaultBtn>
+            <AlternateBtn>Faça seu cadastro</AlternateBtn>
+          </div>
         </div>
       </Container>
     </WithIntersectionObserver>

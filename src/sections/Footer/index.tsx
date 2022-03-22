@@ -14,7 +14,7 @@ const Footer = ({ SetTheme }: IProps) => {
   }, [SetTheme]);
   return (
     <WithIntersectionObserver callback={memoizedCallback}>
-      <Container id="footer">
+      <Container id="footer" className="limit">
         <div>
           <h1 className="logo">My-colors</h1>
         </div>

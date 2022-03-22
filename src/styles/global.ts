@@ -32,8 +32,12 @@ export default createGlobalStyle<GlobalProps>`
         color: ${({ theme }) => `hsl(${theme.fg})`};
         background-color: ${({ theme }) => `hsl(${theme.bg})`};
         transition: 500ms ease-out;
+    }
+
+    .limit {
         max-width: 1600px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* color utility classes */

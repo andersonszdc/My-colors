@@ -14,7 +14,7 @@ const Cases = ({ SetTheme }: IProps) => {
   }, [SetTheme]);
   return (
     <WithIntersectionObserver callback={memoizedCallback}>
-      <Container id="cases">
+      <Container id="cases" className="limit">
         <h1 className="title">
           As marcas e os criadores de conteúdo têm motivos pra comemorar
         </h1>

@@ -21,7 +21,7 @@ const FAQ = ({ SetTheme }: IProps) => {
   });
   return (
     <WithIntersectionObserver callback={memoizedCallback}>
-      <Container id="FAQ">
+      <Container id="FAQ" className="limit">
         <h1 className="title">Algumas dúvidas comuns</h1>
         <div className="questions">
           {data.map((data: any, index) => (

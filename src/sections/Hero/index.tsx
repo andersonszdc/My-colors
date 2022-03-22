@@ -4,7 +4,7 @@ import { Container } from "./styles";
 
 const Hero = () => {
   return (
-    <Container>
+    <Container className="limit">
       <div>
         <img src="/hero.png" alt="4 imagens" />
       </div>

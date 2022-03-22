@@ -13,7 +13,7 @@ const HowItWorks = ({ SetTheme }: IProps) => {
   }, [SetTheme]);
   return (
     <WithIntersectionObserver callback={memoizedCallback}>
-      <Container id="howitowork">
+      <Container id="howitowork" className="limit">
         <h1 className="title">Como funciona</h1>
         <h2 className="subtitle">
           As pessoas usam o My-colors quando querem descobrir algo novo, mas não
