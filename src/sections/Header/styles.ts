@@ -5,7 +5,7 @@ export const Container = styled.main`
   justify-content: center;
   border-bottom: 1px solid ${({ theme }) => `hsl(${theme.fg}, 0.2)`};
   width: 100%;
-  padding: 1.6rem 8%;
+  padding: 1.6rem 0;
   position: sticky;
   top: 0;
   background-color: ${({ theme }) => `hsl(${theme.bg})`};
@@ -18,6 +18,7 @@ export const Container = styled.main`
     align-items: center;
     width: 100%;
     max-width: 1600px;
+    padding: 0 8%;
   }
 
   .logo {
@@ -38,5 +39,27 @@ export const Container = styled.main`
   .action {
     display: flex;
     gap: 1.6rem;
+  }
+
+  .btnMenu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .btnMenu path {
+    fill: ${({ theme }) => `hsl(${theme.fg})`};
+  }
+
+  @media (max-width: 1300px) {
+    .btnMenu {
+      display: block;
+    }
+    
+    .navbar,
+    .action {
+      display: none;
+    }
   }
 `;
