@@ -7,6 +7,7 @@ export const Container = styled.main`
   justify-content: center;
   min-height: calc(100vh - 118px);
   align-items: center;
+  padding: 0 8%;
 
   .copy {
     display: flex;

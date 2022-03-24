@@ -5,9 +5,10 @@ export const Container = styled.footer`
   margin-bottom: 4rem;
   display: flex;
   justify-content: space-between;
+  padding: 0 8%;
 
   .logo {
-      font-size: var(--fs-500);
+    font-size: var(--fs-500);
   }
 
   .navbar {

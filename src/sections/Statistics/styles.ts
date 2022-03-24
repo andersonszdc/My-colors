@@ -6,6 +6,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 12rem;
   align-items: center;
+  padding: 0 8%;
 
   .copy {
     display: flex;

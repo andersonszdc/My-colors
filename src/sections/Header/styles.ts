@@ -5,7 +5,7 @@ export const Container = styled.main`
   justify-content: center;
   border-bottom: 1px solid ${({ theme }) => `hsl(${theme.fg}, 0.2)`};
   width: 100%;
-  padding: 1.6rem 0;
+  padding: 1.6rem 8%;
   position: sticky;
   top: 0;
   background-color: ${({ theme }) => `hsl(${theme.bg})`};

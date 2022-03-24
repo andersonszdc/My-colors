@@ -6,6 +6,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 6.4rem;
+  padding: 0 8%;
 
   .title {
     font-size: var(--fs-800);

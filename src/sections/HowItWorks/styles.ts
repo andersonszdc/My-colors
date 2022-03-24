@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 4.8rem;
   text-align: center;
+  padding: 0 8%;
 
   .title {
     font-size: var(--fs-800);
