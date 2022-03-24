@@ -15,4 +15,12 @@ export const Container = styled.section`
   .title {
     font-size: var(--fs-800);
   }
+
+  @media (max-width: 650px) {
+    text-align: center;
+    .action {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 `;

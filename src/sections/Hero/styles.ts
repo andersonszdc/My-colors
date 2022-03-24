@@ -24,4 +24,15 @@ export const Container = styled.main`
     font-size: var(--fs-500);
     font-weight: 400;
   }
+
+  @media (max-width: 1200px) {
+    margin-top: 8rem;
+    flex-direction: column-reverse;
+    gap: 8rem;
+
+    .copy {
+      text-align: center;
+      align-items: center;
+    }
+  }
 `;

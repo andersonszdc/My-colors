@@ -25,7 +25,7 @@ const HowItWorks = ({ SetTheme }: IProps) => {
           conteúdo do My-colors (os “Pins”), as pessoas vão refinando seus
           gostos até encontrar o que querem.
         </h2>
-        <div>
+        <div className="wrapper__img">
           <img src="/breakfast.png" alt="imagens de café da manhã" />
         </div>
       </Container>

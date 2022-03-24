@@ -25,4 +25,10 @@ export const Container = styled.section`
   .answer {
     font-size: var(--fs-400);
   }
+
+  @media (max-width: 600px) {
+    .questions {
+      grid-template-columns: 1fr;
+    }
+  }
 `;

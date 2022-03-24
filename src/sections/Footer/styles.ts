@@ -21,4 +21,13 @@ export const Container = styled.footer`
   .navbar a {
     font-size: var(--fs-300);
   }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 3rem;
+
+    .navbar {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
 `;

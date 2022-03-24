@@ -16,4 +16,8 @@ export const Container = styled.div`
   .subtitle {
     font-size: var(--fs-500);
   }
+
+  .wrapper__img img {
+    width: 100%;
+  }
 `;

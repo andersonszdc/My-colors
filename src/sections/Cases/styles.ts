@@ -36,4 +36,11 @@ export const Container = styled.div`
   .card__paragraph {
     font-size: var(--fs-400);
   }
+
+  @media (max-width: 800px) {
+    .cases {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
 `;

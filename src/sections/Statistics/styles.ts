@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-bottom: 18rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template:
+    "visual copy"
+    / 1fr 1fr;
   gap: 12rem;
   align-items: center;
   padding: 0 8%;
@@ -12,6 +14,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    grid-area: copy;
   }
 
   img {
@@ -23,6 +26,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    grid-area: visual;
   }
 
   .visual__img {
@@ -60,5 +64,11 @@ export const Container = styled.div`
 
   .card__paragraph {
     font-size: var(--fs-400);
+  }
+
+  @media (max-width: 1100px) {
+    grid-template:
+      "copy"
+      "visual";
   }
 `;
